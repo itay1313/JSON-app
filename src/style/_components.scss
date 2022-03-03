@@ -1,0 +1,21 @@
+h1 {
+  font-size: var(--font-size-xl);
+  color: var(--secondary-color);
+}
+
+h5 {
+  font-size: var(--font-size-base);
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+section {
+  padding: var(--large-unit) 0;
+}
+
+.line {
+  background-color: var(--primary-color);
+  width: 45px;
+  height: 3px;
+  margin: 0 auto 30px;
+}

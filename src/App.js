@@ -1,28 +1,35 @@
 import React from "react";
-import "./scss/App.scss";
+import "./App.css";
+import Movies from "./components/Movie/Movie";
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="header">
-        <h1>Web Developer Interview Exercise</h1>
-      </header> */}
-      {/* Your code starts here */}
-      <section>
-        <div className="line"></div>
-        <h1>Avengers movies</h1>
-        <div className="movies">
-          <div className="movie">
-            <img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="Avengers: Endgame" />
-            <h2>Avengers: Endgame</h2>
-            <p>
-              As the Avengers and their allies have continued to protect the world from
-              threats too large for any one hero to handle, a new danger has emerged
-            </p>
+    <>
+      <section className="bg-gray flex column">
+        <div className="container flex center column">
+          <div className="mb-large">
+            <div className="line"></div>
+            <h1>Avengers Movies</h1>
+          </div>
+          <div className="movies flex column gap">
+            <Movies />
           </div>
         </div>
       </section>
-    </div>
+      <section className="flex column">
+        <div className="container flex center column">
+          <div className="mb-large">
+            <div className="line"></div>
+            <h1>Movice sources</h1>
+            <div className="movie-sources flex mobile-col gap">
+              sdsds
+              <div>ddd</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </>
   );
 }
 

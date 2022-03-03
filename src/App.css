@@ -1,0 +1,9 @@
+@import "./style/_resets.scss";
+@import "./style/_variables.scss";
+@import "./style/_components.scss";
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
