@@ -14,6 +14,16 @@
   .movie {
     flex-grow: 1;
     width: 100%;
+
+    .movie-icon-button {
+      cursor: pointer;
+
+      &:hover {
+        .pathPrimary {
+          fill: var(--primary-color);
+        }
+      }
+    }
   }
 
   .movie-icon {

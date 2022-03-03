@@ -34,7 +34,7 @@ function BoxSource() {
     )
   })
 
-  return <div className="sources flex gap">{DisplayBoxSourceData}</div>
+  return <div className="sources flex gap mobile-col">{DisplayBoxSourceData}</div>
 }
 
 export default BoxSource
