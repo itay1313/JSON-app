@@ -1,0 +1,69 @@
+.ButtonsWebsite {
+  touch-callout: none;
+  user-select: none;
+  display: inline-block;
+  border: 1px solid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--secondary-color);
+
+  &__text {
+    display: block;
+    padding: 0.8rem 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: var(--font-size-sm);
+
+    &:before {
+      content: attr(title);
+    }
+
+    &--bis {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateX(-1 * 0.8rem);
+      opacity: 0;
+    }
+  }
+
+  &__mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.3s;
+  }
+}
+
+.ButtonsWebsite:hover {
+  opacity: 1;
+
+  .ButtonsWebsite__text {
+    animation: fx-text 0.3s ease-out;
+
+    &--bis {
+      animation: fx-text-bis 0.3s ease-out;
+    }
+  }
+
+  .ButtonsWebsite__mask {
+    animation: fx-mask 0.3s ease-out;
+  }
+}
+
+.ButtonsWebsite:active {
+  opacity: 1;
+  background: #fff;
+  color: var(--secondary-color);
+}
