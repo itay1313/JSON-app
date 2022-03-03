@@ -18,6 +18,10 @@
 
   .movie-icon {
     flex-basis: 5%;
+
+    @media (max-width: 768px) {
+      flex-basis: 10%;
+    }
   }
 
   .movie-casts li {
