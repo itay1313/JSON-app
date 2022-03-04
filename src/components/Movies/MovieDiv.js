@@ -49,8 +49,8 @@ function Movies(movie) {
         {/* more info */}
         {isActive && <div className="movie-moreinfo flex column gap">
           <ul className="movie-casts flex wrap gap between">
-            {movie.casts.map((cast) => {
-              return <li>{cast}</li>
+            {movie.casts.map((cast, i) => {
+              return <li key={i}>{cast}</li>
             })}
           </ul>
           <a href={movie.fullCastUrl}>See Full Cast</a>
