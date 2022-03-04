@@ -5,6 +5,7 @@
   background: #fff;
   box-shadow: 20px 20px 43px #cecece,
     -20px -20px 43px #ffffff;
+  border-radius: var(--border-radius);
 
   &:hover {
     box-shadow: 20px 20px 60px #cecece,

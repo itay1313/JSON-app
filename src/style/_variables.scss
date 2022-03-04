@@ -3,6 +3,7 @@
   --container-padding: var(--space-unit);
   --primary-color: #304ffe;
   --secondary-color: #1a237e;
+  --itay-color: #10f5a3;
   --bg-gray: #f2f2f2;
   /* typography */
   --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
@@ -13,8 +14,9 @@
   --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
   --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 
-  --space-unit: clamp(1rem, 0.25vw + 1rem, 1.5rem);
-  --large-unit: 80px;
+  --space-unit: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --large-unit: clamp(6rem, 4vw + 3.75rem, 5.56rem);
+  --border-radius: 0.3125rem;
 }
 
 .flex {
