@@ -64,7 +64,8 @@
 .button:active {
   opacity: 1;
   background: var(--title-color);
-  color: white;
+  color: var(--card-background);
+  ;
 }
 
 @keyframes fx-mask {
