@@ -9,6 +9,7 @@
   --text-color: #000;
   --bg-gray: #f2f2f2;
   --card-background: #fff;
+  --border-color: #cccccc3b;
   /* typography */
   --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
   --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
@@ -32,6 +33,7 @@
   --card-background: var(--bg);
   --title-color: #fff;
   --text-color: #fff;
+  --border-color: #ffffff29;
   background: var(--bg);
 
 }

@@ -43,7 +43,7 @@
   .movie-moreinfo {
     padding-top: var(--space-unit);
     margin-top: var(--space-unit);
-    border-top: 1px solid;
+    border-top: 1px solid var(--border-color);
 
     a {
       color: var(--primary-color);
