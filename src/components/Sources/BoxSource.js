@@ -1,13 +1,13 @@
-import React from "react"
-import "./BoxSource.scss"
-import Button from "../Button/Button"
-import ButtonWebsite from "../Button/ButtonWebsite"
-import MoviesSourcesJson from "../../json/movie_sources.json"
+import React from "react";
+import "./BoxSource.scss";
+import Button from "../Button/Button";
+import ButtonWebsite from "../Button/ButtonWebsite";
+import MoviesSourcesJson from "../../json/movie_sources.json";
 
 function BoxSource() {
   const DisplayBoxSourceData = MoviesSourcesJson.map((source) => {
     return (
-      <div className="BoxSource-wrapper flex mb-large">
+      <div className="BoxSource-wrapper flex mb-large" key={source.name}>
         <div className="BoxSource flex column">
           <h5>{source.name}</h5>
           <div className="flex column gap">
@@ -31,10 +31,12 @@ function BoxSource() {
           </div>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
-  return <div className="sources flex gap mobile-col">{DisplayBoxSourceData}</div>
+  return (
+    <div className="sources flex gap mobile-col">{DisplayBoxSourceData}</div>
+  );
 }
 
-export default BoxSource
+export default BoxSource;

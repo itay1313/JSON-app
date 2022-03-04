@@ -1,18 +1,23 @@
-import React from "react"
-import MovieDiv from "./MovieDiv"
-import "./Movies.scss"
-import MoviesJson from "../../json/movies.json"
+import React from "react";
+import MovieDiv from "./MovieDiv";
+import "./Movies.scss";
+import MoviesJson from "../../json/movies.json";
 
 function Movies() {
-
-
   return (
     <>
       {MoviesJson.map(({ title, summary, casts, imdbUrl, fullCastUrl }) => (
-        <MovieDiv title={title} summary={summary} casts={casts} imdbUrl={imdbUrl} fullCastUrl={fullCastUrl} />
+        <MovieDiv
+          title={title}
+          summary={summary}
+          casts={casts}
+          imdbUrl={imdbUrl}
+          fullCastUrl={fullCastUrl}
+          key={title}
+        />
       ))}
     </>
-  )
+  );
 }
 
-export default Movies
+export default Movies;
