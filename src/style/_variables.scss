@@ -68,6 +68,10 @@
 
 .gap-l {
   gap: calc(var(--container-padding) * 3);
+
+  @media (max-width: 768px) {
+    gap: calc(var(--container-padding) * 1.5);
+  }
 }
 
 .wrap {
