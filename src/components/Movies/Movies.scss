@@ -2,14 +2,14 @@
   padding: var(--container-padding);
   width: 100%;
   gap: var(--container-padding);
-  background: #fff;
-  box-shadow: 20px 20px 43px #cecece,
-    -20px -20px 43px #ffffff;
+  background: var(--card-background);
+  box-shadow: 0px 0px 20px var(--bg-gray),
+    -0px -0px 20px var(--card-background);
   border-radius: var(--border-radius);
 
   &:hover {
-    box-shadow: 20px 20px 60px #cecece,
-      -20px -20px 60px #ffffff;
+    box-shadow: 20px 20px 60px var(--bg-gray),
+      -20px -20px 60px var(--card-background);
   }
 
   .movie {

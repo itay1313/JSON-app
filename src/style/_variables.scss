@@ -1,10 +1,14 @@
 :root {
   --container-width: 1280px;
   --container-padding: var(--space-unit);
+  --bg: #fff;
   --primary-color: #304ffe;
-  --secondary-color: #1a237e;
+  --secondary-color: #12196b;
   --itay-color: #10f5a3;
+  --title-color: var(--secondary-color);
+  --text-color: #000;
   --bg-gray: #f2f2f2;
+  --card-background: #fff;
   /* typography */
   --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
   --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
@@ -17,6 +21,19 @@
   --space-unit: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
   --large-unit: clamp(6rem, 4vw + 3.75rem, 5.56rem);
   --border-radius: 0.3125rem;
+}
+
+.dark {
+  --bg: #000;
+  --primary-color: #fff;
+  --secondary-color: var(--itay-color);
+  --itay-color: #10f5a3;
+  --bg-gray: #202529;
+  --card-background: var(--bg);
+  --title-color: #fff;
+  --text-color: #fff;
+  background: var(--bg);
+
 }
 
 .flex {

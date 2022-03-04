@@ -7,7 +7,7 @@
   cursor: pointer;
   overflow: hidden;
   border-radius: var(--border-radius);
-  color: var(--secondary-color);
+  color: var(--title-color);
 
   &__text {
     display: block;
@@ -39,7 +39,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--secondary-color);
+    background: var(--title-color);
     transform: translateX(-100%) rotate(45deg);
     transition: all 0.3s;
   }
@@ -63,7 +63,7 @@
 
 .button:active {
   opacity: 1;
-  background: var(--secondary-color);
+  background: var(--title-color);
   color: white;
 }
 

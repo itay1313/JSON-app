@@ -7,8 +7,8 @@
   cursor: pointer;
   overflow: hidden;
   border-radius: var(--border-radius);
-  color: #fff;
   background-color: var(--secondary-color);
+  color: var(--bg);
 
   &__text {
     display: block;
@@ -40,7 +40,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fff;
+    background: var(--card-background);
     transform: translateX(-100%) rotate(45deg);
     transition: all 0.3s;
   }
@@ -64,6 +64,6 @@
 
 .ButtonsWebsite:active {
   opacity: 1;
-  background: #fff;
+  background: var(--card-background);
   color: var(--secondary-color);
 }

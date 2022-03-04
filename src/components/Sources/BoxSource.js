@@ -7,7 +7,7 @@ import MoviesSourcesJson from "../../json/movie_sources.json"
 function BoxSource() {
   const DisplayBoxSourceData = MoviesSourcesJson.map((source) => {
     return (
-      <div className="BoxSource-wrapper flex">
+      <div className="BoxSource-wrapper flex mb-large">
         <div className="BoxSource flex column">
           <h5>{source.name}</h5>
           <div className="flex column gap">

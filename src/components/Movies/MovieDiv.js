@@ -36,7 +36,7 @@ function Movies(movie) {
                 height="24px"
                 viewBox="0 0 24 24"
                 width="24px"
-                fill="var(--secondary-color)"
+                fill="var(--title-color)"
                 className="movie-icon-button"
               >
                 <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
