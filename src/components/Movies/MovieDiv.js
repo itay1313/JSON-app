@@ -8,7 +8,7 @@ function Movies(movie) {
 
 
   return (
-    <div className="movie-wrapper flex">
+    <div className="movie-wrapper flex small-col">
       <div className="movie-icon">
         <img width="70" src={movieIcon} alt="movieIcon" />
       </div>
@@ -16,7 +16,7 @@ function Movies(movie) {
         <h5>{movie.title}</h5>
         <div className="flex mobile-col gap-l">
           <p>{movie.summary}</p>
-          <div className="gap flex center">
+          <div className="gap flex center small-col">
             <a href={movie.imdbUrl} target="_blank" rel="noopener noreferrer">
               <Button buttonTitle="IMDB" />
             </a>

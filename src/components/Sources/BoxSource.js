@@ -12,7 +12,7 @@ function BoxSource() {
           <h5>{source.name}</h5>
           <div className="flex column gap">
             <p>{source.summary}</p>
-            <div className="gap flex center">
+            <div className="gap flex center small-col">
               <a
                 href={source.websiteUrl}
                 target="_blank"
